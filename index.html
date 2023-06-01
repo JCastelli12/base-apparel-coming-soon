@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+
+</head>
+<body>
+
+  <div class="store">
+    <header>
+      <img src="images/logo.svg" alt="" class="store__logo">
+    </header>
+
+    <picture>
+      <source media="(min-width: 1024px)" srcset="images/hero-desktop.jpg">
+      <img src="images/hero-mobile.jpg" alt="woman in orange collared shirt with a plant behind her"
+        class="store__image">
+    </picture>
+
+    <main>
+      <section class="store__section">
+        <h1 class="store__title"><span>We're</span> coming soon</h1>
+        <p class="store__details">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our launch deals.
+        </p>
+
+        <form action="#">
+          <input type="email" id="email" name="e-mail" placeholder='Email Address' class="store__input-email">
+          <button type="submit" onClick='EmailValidation()' class="store__button"><img src="images/icon-arrow.svg"
+              alt=""></button>
+
+          <img src="images/icon-error.svg" alt="" class="store__email-error">
+        </form>
+
+        <p class="store__error-message">Please provide a valid email</p>
+
+      </section>
+    </main>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
